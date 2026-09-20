@@ -1,0 +1,84 @@
+.sidebar-youtube{
+    position: fixed;
+    top: 58px;
+    bottom: 0px;
+    left: 0px;
+    width: 70px;
+    background-color: white;
+    padding: 0px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    z-index: 1001;
+    
+   
+}
+.button-sidebar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto , Arial;
+    border: solid 1px rgba(147, 147, 147, 0.768);
+    border-radius: 10px;
+    font-size: 9px;
+    font-weight: 600;
+    height: 76px;
+    width: 61px;
+    color:rgba(1, 1, 1, 0.563);
+    margin-bottom: 2px;
+    background-color: white;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+}
+.tooltip-s{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -40px;
+    bottom: 2px;
+    background-color: rgb(10, 10, 10);
+    border: solid 3px rgb(143, 143, 143);
+    font-weight: 500;
+    font-size: 13px;
+    color: rgb(143, 143, 143);
+    height: 24px;
+    flex-shrink: 0;
+    padding: 0 5px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    
+    
+}
+.tooltip-you{
+    right: -25px;
+}
+.tooltip-subscribe{
+    right: -55px;
+}
+.button-sidebar:hover .tooltip-s{
+    opacity: 1;
+}
+
+.sidebar-youtube svg{
+    width: 24px;
+    height: 24px;
+    margin-bottom: 4px;
+}
+.button-sidebar:hover{
+    background-color: rgba(0, 0, 0, 0.108);
+    color:rgba(1, 1, 1, 0.678);
+    border:solid 1px rgba(1, 1, 1, 0.678);
+
+}
+@media(max-width:790px){
+    .sidebar-youtube{
+        display: none;
+    }
+    
+}
